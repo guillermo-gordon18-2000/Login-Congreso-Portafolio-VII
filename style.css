@@ -20,38 +20,32 @@ body{
     color: #fff;
     background: #7a1c79;
 }
- .NET{
-  
-    background: rgb(184, 6, 6);
-    text-align: center;
-    
-}
 
 .container{
     width: 330px;
     background: #fff;
     text-align: center;
     border-radius: 0px 6px 6px 0px;
-    padding: 31px 35px 10px 35px;
+    padding: 30px 35px 0px 35px;
 }
  .Form-image{
     width: 55%;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
-    background-color: #fde3a7d7;
+    background-color: #dfd1fc; 
     border-radius: 6px 0px 0px 6px;
-    padding: 10.5% 30px 10px 35px;;
+    padding: 150px 30px 10px 35px;;
 }
 .container header h1 {
     font-size: 35px;
     font-weight: 600;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
 
 }
 
 .container header h1::after {
-    content: '';
+    content: ''; 
     display: block;
     width: 10rem;
     height: 0.3rem;
@@ -154,8 +148,9 @@ form .page .btns button.next{
     margin-left: 3px;
 }
 .container .progress-bar{
+    margin:0;
     display: flex;
-    margin: 30px 0;
+    
     user-select: none;
 }
 .container .progress-bar .step{
@@ -235,11 +230,18 @@ form .page .btns button.next{
 }
 
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1200px) {
     .Form-image {
         display: none;
     }
     .container {
+     
+           
+            background: #fff;
+            text-align: center;
+            border-radius: 0px 6px 6px 0px;
+            padding: 30px 35px 0px 35px;
+        
         width: 70%;
     }
     form .page .field input{
@@ -251,6 +253,7 @@ form .page .btns button.next{
         font-size: 14px;
         font-weight: 500;
     }
+
     form .page .field button{
         width: 93.1%;
         height: calc(100% + 6px);
@@ -278,5 +281,87 @@ form .page .btns button.next{
         width: 45.1%;
     }
     
+    .progress-bar .step .bullet{
+        height:25px;
+        width: 21.9px;
+        border: 2px solid #000;
+        display: inline-block;
+        border-radius:50%;
+        position: relative;
+        transition:0.2s;
+        font-weight: 500;
+        font-size: 17px;
+        line-height:25px;
+        
+    }
+
+    form .page .field select{
+        background: white;
+        width: 92%;
+        padding-left: 10px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid lightgrey;
+    }
+
+
+    form  .pag2 .field input {
+        height: 90%;
+        width: 83%;
+        border: 1px solid lightgrey;
+        border-radius:5px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        background: red;
+    }
+
+
+    form .pag2 .btns button.next {
+        margin-left: 1px;
+        width: 40.1%;
+      }
+
+      form .pag2 .field select {
+        background: white;
+        width: 85%;
+        padding-left: 10px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid lightgrey;
+      }
+      
+      .form-outer form .pag3 .title {
+        text-align: left;
+        font-size: 22px;
+        font-weight: 600;
+        color: #000000c0;
+      }
+      
+    form  .pag3 .field input {
+        height: 90%;
+        width: 83%;
+        border: 1px solid lightgrey;
+        border-radius:5px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        background: red;
+    }
+
+
+    form .pag3 .btns button.next {
+        margin-left: 1px;
+        width: 34%;
+      }
+
+      form .pag3 .field select {
+        background: white;
+        width: 84%;
+        padding-left: 10px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid lightgrey;
+      }
    
 }
