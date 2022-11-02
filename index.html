@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Step Form</title>
     <script src="https://kit.fontawesome.com/5f4c1bb038.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,6 +26,9 @@
 
 
       <div class="container Form-image">
+        <div>
+          <img class="Img_utp" src="img//utp.svg" alt="">
+        </div>
         <img src="img//undraw_shopping_re_3wst.svg" alt="">
       </div>
 
@@ -35,7 +39,9 @@
 
           <div class="step">                    <!---->
             <p>                                   <!---->
-              *                               <!---->
+              <span class="material-symbols-outlined">
+                person
+                </span>                               <!---->
             </p>                                     <!---->
             <div class="bullet">                       <!---->
               <span class="span">1</span>                              <!---->
@@ -45,7 +51,9 @@
 
           <div class="step">
             <p>
-              *
+              <span class="material-symbols-outlined">
+                home_pin
+                </span>
             </p>
             <div class="bullet">
               <span>2</span>
@@ -54,7 +62,9 @@
           </div>
           <div class="step">
             <p>
-              *
+              <span class="material-symbols-outlined">
+                calendar_month
+                </span>
             </p>
             <div class="bullet">
               <span>3</span>
@@ -63,7 +73,9 @@
           </div>
           <div class="step">
             <p>
-              *
+              <span class="material-symbols-outlined">
+                payments
+                </span>
             </p>
             <div class="bullet">
               <span>4</span>
@@ -72,7 +84,9 @@
           </div>
           <div class="step">
             <p>
-              *
+              <span class="material-symbols-outlined">
+                request_page
+                </span>
             </p>
             <div class="bullet">
               <span>5</span>
@@ -117,8 +131,16 @@
             <!--                       -->
             <div class="page">
               <div class="title">
-                Contact Info:
+                Localizacion
               </div>
+
+              <div class="field">
+                <div class="label">
+                  Ciudad
+                </div>
+                <input type="text">
+              </div>
+
               <div class="field">
                 <div class="label">
                   Proviancia
@@ -132,32 +154,33 @@
                   <option>Colon</option>
                 </select>
               </div>
+
+              
+
               <div class="field">
                 <div class="label">
-                  Ciudad
+                  Institución / Entidad / Universidad
                 </div>
                 <input type="text">
               </div>
+
               <div class="field">
                 <div class="label">
-                  Corregimiento
+                  Unidad/Departamento/Facultad
                 </div>
-                <input type="Number">
+                <input type="text">
               </div>
-              <div class="field">
-                <div class="label">
-                  Adomicilio
-                </div>
-                <input type="Number">
-              </div>
+              
+
               <div class="field btns">
                 <button class="prev-1 prev">Anterior</button>
                 <button class="next-1 next">Siguiente</button>
               </div>
             </div>
+
             <div class="page pag2">
               <div class="title">
-                Fecha de nacimiento:
+                Informacion Basica:
               </div>
               <div class="field">
                 <div class="label">
@@ -177,27 +200,6 @@
               </div>
               <div class="field">
                 <div class="label">
-                  Institución / Entidad / Universidad
-                </div>
-                <input type="text">
-              </div>
-              <div class="field">
-                <div class="label">
-                  Unidad/Departamento/Facultad
-                </div>
-                <input type="text">
-              </div>
-              <div class="field btns">
-                <button class="prev-2 prev">Anterior</button>
-                <button class="next-2 next">Siguiente</button>
-              </div>
-            </div>
-            <div class="page pag3">
-              <div class="title">
-                Detalles del la incripcion
-              </div>
-              <div class="field">
-                <div class="label">
                  Ocupacion
                 </div>
                 <select>
@@ -206,20 +208,7 @@
                   <option>FUNCIONARIO</option>
                   </select>
               </div>
-              <div class="field">
-                <div class="label">
-                 Tipo de ticket
-                </div>
-                <select>
-                  <option>AUTOR</option>
-                  <option>ESTUDIANTE UTP</option>
-                  <option>FUNCIONARIO UTP</option>
-                  <option>ESTUDIANTE NACIONAL</option>
-                  <option>PROFECIONAL NACIONAL</option>
-                  <option>ESTUDIANTES INTERNACIONALES DE PREGRADO Y POSTGRADO Y/O MIEMBROS DE WPA </option>  
-                  <option>PROFESIONALES INTERNACIONALES Y/O MIEMBROS DE WPA </option>
-                </select>
-              </div>
+              
               <div class="field">
                 <div class="label">
                 INTERES
@@ -235,6 +224,49 @@
                   <option>Otro(s)</option>
                 </select>
               </div>
+
+              <div class="field btns">
+                <button class="prev-2 prev">Anterior</button>
+                <button class="next-2 next">Siguiente</button>
+              </div>
+            </div>
+            <div class="page pag3">
+              <div class="title">
+                Detalles del la incripcion
+              </div>
+              
+              <div class="field">
+                <div class="label">
+                 Tipo de ticket
+                </div>
+                <select>
+                  <option>AUTOR</option>
+                  <option>ESTUDIANTE UTP</option>
+                  <option>FUNCIONARIO UTP</option>
+                  <option>ESTUDIANTE NACIONAL</option>
+                  <option>PROFECIONAL NACIONAL</option>
+                  <option>ESTUDIANTES INTERNACIONALES DE PREGRADO Y POSTGRADO Y/O MIEMBROS DE WPA </option>  
+                  <option>PROFESIONALES INTERNACIONALES Y/O MIEMBROS DE WPA </option>
+                </select>
+              </div>
+
+              <div class="field">
+                <div class="label">
+                  Tipo de pago
+                </div>
+               <select>
+                  <option>Yappy</option>
+                  
+                  <option>VISA</option>
+                  
+                </select>
+                <!-- 
+ <input  type="radio"> 
+                <input  type="radio"> 
+
+                
+-->
+</div>
               <div class="field btns">
                 <button class="prev-3 prev">Anterior</button>
                 <button class="next-3 next">Siguiente</button>  <!--  next-3 next   -->
@@ -243,14 +275,26 @@
 
             <div class="page">
               <div class="title">
-                Detalles del  login:
+                Facturacion 
               </div>
-              <div class="field">
-                <div class="label">
-                  Tipo de pago
-                </div>
-                <input type="text">
+              <div class="Cont label">
+                <h3>Subtotal </h3>
+                <h4>USD 300 </h4>
+             </div>
+              <div class="Cont label">
+                 <h3>  Payment processing commission 5%  </h3>
+                 <h4>USD 15.00</h4>
               </div>
+
+              <div class="Cont label">
+                <h3> Payment processing commission </h3>
+                <h4>USD 0.50 </h4>
+             </div>
+
+             <div class="Cont label top">
+              <h2>Subtotal </h2>
+              <h4>USD 315.50 </h4>
+             </div>
               <!--  
               <div class="field">
                 <div class="label">
